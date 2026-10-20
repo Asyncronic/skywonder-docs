@@ -1,6 +1,7 @@
 ---
 id: specifications
 title: D9 — Specifications
+sidebar_label: "Specifications"
 description: Full hardware specifications for the D9 Driving Assistance device.
 sidebar_position: 2
 keywords: [D9, specifications, hardware, camera, power, GPS, 4G]

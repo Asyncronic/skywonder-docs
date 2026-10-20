@@ -1,0 +1,176 @@
+/* Device home. Tokens (--dx-*) live in src/css/docs-ui.css. Rows with a real product photo, no cards or banners. */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.intro {
+  max-width: 42rem;
+}
+
+.title {
+  font-size: clamp(2.2rem, 4.5vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--dx-slate);
+  margin: 0;
+}
+
+.section {
+  margin-top: 3.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.device {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--dx-line);
+}
+
+.media {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--dx-line);
+  color: var(--dx-slate);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.icon {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.name {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.name a {
+  color: var(--dx-ink);
+}
+
+.name a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.kind {
+  margin: 0.15rem 0 0.6rem;
+  color: var(--dx-slate);
+  font-weight: 600;
+}
+
+.description {
+  margin: 0 0 1rem;
+  max-width: 38rem;
+}
+
+/* The guide pages in the order an installer uses them. */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.steps a {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--dx-line);
+  border-radius: 99px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.steps a:hover {
+  border-color: var(--ifm-color-primary);
+  background: var(--dx-mist);
+  text-decoration: none;
+}
+
+.soon {
+  margin: 1.25rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--dx-line);
+  color: var(--dx-slate);
+}
+
+.platform {
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 8px;
+  background: var(--dx-mist);
+  max-width: 42rem;
+}
+
+.platformTitle {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+
+.platform p {
+  margin: 0;
+}
+
+[data-theme='dark'] .media {
+  background: #f1f3f6;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .device {
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .media {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+}

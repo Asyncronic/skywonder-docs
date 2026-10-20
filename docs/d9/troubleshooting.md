@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: D9 — Troubleshooting & Maintenance
+sidebar_label: "Troubleshooting & Maintenance"
 description: Common D9 problems and fixes — recording errors, video issues, heat, and device-offline checks. Includes maintenance precautions.
 sidebar_position: 9
 keywords: [D9, troubleshooting, recording invalid, no audio, blurry, heat, offline, maintenance]

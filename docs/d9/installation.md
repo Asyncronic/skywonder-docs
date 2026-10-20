@@ -1,6 +1,7 @@
 ---
 id: installation
 title: D9 — Installation
+sidebar_label: "Installation"
 description: Physical mounting, wiring, SIM and SD-card installation for the D9 device.
 sidebar_position: 3
 keywords: [D9, installation, mounting, wiring, SIM, SD card, windshield]

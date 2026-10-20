@@ -1,6 +1,7 @@
 ---
 id: test-device
 title: A6 — Test Your A6
+sidebar_label: "Test Your A6"
 description: A 10-minute checklist to confirm your A6 dashcam works — Wi-Fi, app video, online, location, live video, recordings and parking recording.
 sidebar_position: 3
 keywords: [A6, dashcam, test, checklist, live video, playback, Sentry Mode, Cloud Spirit]

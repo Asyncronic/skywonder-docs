@@ -1,6 +1,7 @@
 ---
 id: configure-app
 title: D9 — Traqcam Connect Configuration
+sidebar_label: "Traqcam Connect Configuration"
 description: Pair the D9 with the Traqcam Connect mobile app, enable ADAS/DMS rendering, and run ADAS & DMS calibration.
 sidebar_position: 4
 keywords: [D9, Traqcam Connect, ADAS calibration, DMS calibration, AI settings, device Wi-Fi]

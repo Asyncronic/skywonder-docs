@@ -1,0 +1,267 @@
+/**
+ * Reading layer shared by docs.traqcare.com and docs.skywondergps.com (identical file in both repos).
+ *
+ * Readers are fleet managers at a desk and installers on a phone in a workshop, so legibility comes first:
+ * Atkinson Hyperlegible (designed for low-vision readability), a ~70-character measure, and one distinctive
+ * device: numbered steps drawn as a route with stops, like a Traqcare playback. Everything else stays quiet.
+ */
+@import '@fontsource-variable/atkinson-hyperlegible-next';
+@import '@fontsource-variable/atkinson-hyperlegible-mono';
+
+:root {
+  --dx-blue: #1565c0;
+  --dx-ink: #1d2633;
+  --dx-slate: #576274;
+  --dx-line: #d9dfe8;
+  --dx-mist: #f3f6fa;
+  --dx-paper: #ffffff;
+  /* About 75 characters of Atkinson Hyperlegible at 17px (its ch is wider than average, so rem, not ch). */
+  --dx-measure: 38rem;
+
+  --ifm-font-family-base: 'Atkinson Hyperlegible Next Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-monospace: 'Atkinson Hyperlegible Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ifm-font-color-base: var(--dx-ink);
+  --ifm-heading-color: var(--dx-ink);
+  --ifm-heading-font-weight: 700;
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.65;
+  --ifm-code-font-size: 90%;
+  --ifm-background-color: var(--dx-paper);
+  --ifm-toc-border-color: var(--dx-line);
+  --ifm-table-border-color: var(--dx-line);
+  --ifm-table-stripe-background: var(--dx-mist);
+  --ifm-hr-background-color: var(--dx-line);
+  --ifm-navbar-shadow: none;
+  --ifm-global-radius: 8px;
+}
+
+[data-theme='dark'] {
+  --dx-ink: #e7ebf1;
+  --dx-slate: #a4aebc;
+  --dx-line: #2d3747;
+  --dx-mist: #19212c;
+  --dx-paper: #12171f;
+}
+
+/* ─── Chrome ─── */
+.navbar {
+  border-bottom: 1px solid var(--dx-line);
+  box-shadow: none;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+
+.theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700;
+  background: var(--dx-mist);
+}
+
+.table-of-contents__link {
+  font-size: 0.86rem;
+}
+
+/* ─── Reading column ─── */
+/* Prose keeps the measure; tables and screenshots may use the full column. */
+.theme-doc-markdown > :is(p, ul, ol, h1, h2, h3, h4, blockquote, details, .theme-admonition, .tabs-container) {
+  max-width: var(--dx-measure);
+}
+
+.theme-doc-markdown > p:has(> img:only-child) {
+  max-width: none;
+}
+
+.theme-doc-markdown h1 {
+  font-size: 2.15rem;
+  line-height: 1.15;
+  letter-spacing: -0.012em;
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown h2 {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin-top: 2.6rem;
+  padding-top: 0.25rem;
+}
+
+.theme-doc-markdown h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin-top: 1.9rem;
+}
+
+/* The opening paragraph answers the page's question: slightly larger. */
+.theme-doc-markdown > h1 + p {
+  font-size: 1.08rem;
+  color: var(--dx-slate);
+}
+
+.theme-doc-markdown strong {
+  font-weight: 700;
+}
+
+.theme-doc-markdown code {
+  border: 1px solid var(--dx-line);
+  background: var(--dx-mist);
+  padding: 0.05em 0.35em;
+}
+
+.theme-doc-markdown pre code {
+  border: 0;
+  padding: 0;
+}
+
+/* ─── Steps: a route with numbered stops ─── */
+/* Only top-level ordered lists in an article (procedures); lists inside tables, admonitions or tabs keep plain numbers.
+   A list that resumes after a screenshot starts at its own number (counter set from `start` at build time). */
+.theme-doc-markdown > ol {
+  list-style: none;
+  counter-reset: dx-step;
+  padding-left: 0;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.theme-doc-markdown > ol > li {
+  counter-increment: dx-step;
+  position: relative;
+  padding: 0.12rem 0 1rem 2.75rem;
+  margin: 0;
+}
+
+.theme-doc-markdown > ol > li::before {
+  content: counter(dx-step);
+  position: absolute;
+  left: 0;
+  top: 0.18rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The road between stops. */
+.theme-doc-markdown > ol > li::after {
+  content: '';
+  position: absolute;
+  left: calc(0.9rem - 1px);
+  top: 2.15rem;
+  bottom: 0.2rem;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--dx-line);
+}
+
+.theme-doc-markdown > ol > li:last-child {
+  padding-bottom: 0.25rem;
+}
+
+.theme-doc-markdown > ol > li:last-child::after {
+  display: none;
+}
+
+[data-theme='dark'] .theme-doc-markdown > ol > li::before {
+  color: #0e1622;
+}
+
+/* ─── Screenshots ─── */
+.theme-doc-markdown img {
+  border: 1px solid var(--dx-line);
+  border-radius: 8px;
+  background: var(--dx-paper);
+}
+
+.theme-doc-markdown p > img:only-child {
+  display: block;
+  margin: 0.5rem 0;
+  max-height: 34rem;
+  width: auto;
+}
+
+/* Zoomable images (docusaurus-plugin-image-zoom) show they can be opened. */
+.theme-doc-markdown img.medium-zoom-image {
+  cursor: zoom-in;
+}
+
+/* ─── Tables ─── */
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  font-size: 0.93rem;
+  border-collapse: collapse;
+}
+
+.theme-doc-markdown thead th {
+  background: var(--dx-mist);
+  text-align: left;
+  font-weight: 700;
+}
+
+.theme-doc-markdown table tr {
+  border-top: 1px solid var(--dx-line);
+}
+
+.theme-doc-markdown th,
+.theme-doc-markdown td {
+  border: 0;
+  border-bottom: 1px solid var(--dx-line);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+@media (max-width: 640px) {
+  .theme-doc-markdown table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* ─── Notes ─── */
+.theme-admonition {
+  border-radius: 8px;
+  box-shadow: none;
+  margin: 1.5rem 0;
+}
+
+/* ─── "Still need help?" box under each article ─── */
+.dx-help {
+  max-width: var(--dx-measure);
+  margin: 3rem 0 1.5rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--dx-line);
+  border-radius: 8px;
+  background: var(--dx-mist);
+}
+
+.dx-help__title {
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.dx-help p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Focus and motion ─── */
+:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

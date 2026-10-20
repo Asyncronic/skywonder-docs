@@ -1,6 +1,7 @@
 ---
 id: ai-features
 title: D9 — AI Features (ADAS & DMS)
+sidebar_label: "AI Features (ADAS & DMS)"
 description: Full reference for every ADAS and DMS alarm on the D9 — trigger conditions, sensitivity levels, and voice prompts.
 sidebar_position: 6
 keywords: [D9, ADAS, DMS, fatigue, distraction, smoking, phone, seatbelt, lane departure, forward collision]

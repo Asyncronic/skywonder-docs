@@ -1,6 +1,7 @@
 ---
 id: commands
 title: D9 — Commands & Manual Operations
+sidebar_label: "Commands & Manual Operations"
 description: Common manual commands for the D9 — via Traqcam Connect and the Traqcare platform.
 sidebar_position: 7
 keywords: [D9, commands, Traqcam Connect, GPRS, remote command, intercom, video playback, remote photo]

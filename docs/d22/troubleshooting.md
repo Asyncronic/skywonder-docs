@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: D22 — Troubleshooting
+sidebar_label: "Troubleshooting"
 description: Fixes for common D22 problems — Wi-Fi not showing, app login, device not online, no video, no GPS, and AI alarm issues.
 sidebar_position: 7
 keywords: [D22, WD02, troubleshooting, offline, no video, Wi-Fi, Traqcam Connect, demo mode, Device ID]

@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: D12 — Troubleshooting
+sidebar_label: "Troubleshooting"
 description: Fixes for common D12 problems — no picture, not online, no video in Traqcare, no GPS, SD card, and AI alarm issues.
 sidebar_position: 7
 keywords: [D12, troubleshooting, offline, no video, camera, SD card, GPS, simulated speed, Device ID, IMEI]

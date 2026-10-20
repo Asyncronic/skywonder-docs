@@ -1,6 +1,7 @@
 ---
 id: installation
 title: A6 — Installation
+sidebar_label: "Installation"
 description: Insert the SIM and memory card and power the A6 Wi-Fi 4G dashcam, using the cigarette-lighter plug or the hardwire kit.
 sidebar_position: 2
 keywords: [A6, dashcam, installation, SIM card, TF card, power, cigarette lighter, hardwire kit, ACC, Cloud Spirit]

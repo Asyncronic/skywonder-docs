@@ -1,6 +1,7 @@
 ---
 id: installation
 title: D22 — Installation
+sidebar_label: "Installation"
 description: Insert the SIM and memory card, wire the power, and mount the D22 dash camera.
 sidebar_position: 3
 keywords: [D22, WD02, installation, SIM card, TF card, wiring, ACC, mounting]

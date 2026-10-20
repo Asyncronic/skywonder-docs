@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: A6 — Troubleshooting
+sidebar_label: "Troubleshooting"
 description: Fixes for common A6 dashcam problems — Wi-Fi not showing, app can't connect, not online on Traqcare, no video, no GPS and parking recording.
 sidebar_position: 4
 keywords: [A6, dashcam, troubleshooting, offline, no video, Wi-Fi, Cloud Spirit, Device ID, Sentry Mode]

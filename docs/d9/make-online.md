@@ -1,6 +1,7 @@
 ---
 id: make-online
 title: D9 — Make It Online on Traqcare
+sidebar_label: "Make It Online on Traqcare"
 description: Step-by-step guide to point a D9 at the Traqcare platform and activate it in your account.
 sidebar_position: 5
 keywords: [D9, Traqcare, Traqcam Connect, onboarding, activation, JT808, 5101, platform settings]

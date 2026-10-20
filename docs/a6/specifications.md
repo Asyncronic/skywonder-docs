@@ -1,6 +1,7 @@
 ---
 id: specifications
 title: A6 — Specifications
+sidebar_label: "Specifications"
 description: Hardware specifications for the A6 4G cloud dashcam.
 sidebar_position: 5
 keywords: [A6, specifications, hardware, 2K, 720P, 4G CAT1, GPS, BeiDou, TF card, power, ACC]

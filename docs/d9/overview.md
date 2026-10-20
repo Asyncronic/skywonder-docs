@@ -1,6 +1,7 @@
 ---
 id: overview
 title: D9 — Overview
+sidebar_label: "Overview"
 description: D9 is a dual-camera AI dashcam with ADAS and DMS for fleet monitoring, built on the JT/T808 and JT/T1078 protocols.
 sidebar_position: 1
 keywords: [D9, driving assistance, ADAS, DMS, dashcam, JT808, JT1078, fleet safety]

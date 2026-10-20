@@ -1,6 +1,7 @@
 ---
 id: firmware-upgrade
 title: D9 — Firmware Upgrade
+sidebar_label: "Firmware Upgrade"
 description: Upgrade the D9 firmware via the Traqcam Connect app, and recover a bricked unit using forced SD-card flashing.
 sidebar_position: 8
 keywords: [D9, firmware, upgrade, OTA, SigmastarUpgradeSD, forced flash, recovery]

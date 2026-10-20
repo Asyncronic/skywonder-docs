@@ -1,6 +1,7 @@
 ---
 id: specifications
 title: D22 — Specifications
+sidebar_label: "Specifications"
 description: Full hardware specifications for the D22 2-channel 4G dash camera.
 sidebar_position: 2
 keywords: [D22, WD02, specifications, hardware, 4G, GPS, power, TF card]

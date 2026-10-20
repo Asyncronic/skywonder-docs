@@ -1,6 +1,7 @@
 ---
 id: specifications
 title: D12 — Specifications
+sidebar_label: "Specifications"
 description: Hardware specifications and screen status icons for the D12 10.1-inch driving assistance display.
 sidebar_position: 2
 keywords: [D12, specifications, hardware, 5 channel, AHD, 4G, GPS, SD card, mSATA, status icons]

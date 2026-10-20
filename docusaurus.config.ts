@@ -35,6 +35,7 @@ const config: Config = {
   },
 
   plugins: [
+    'docusaurus-plugin-image-zoom',
     [
       require.resolve('./plugins/seo-postbuild.js'),
       {
@@ -74,12 +75,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          showLastUpdateTime: false,
+          // Step lists that resume after a screenshot keep their numbers (see src/css/docs-ui.css).
+          rehypePlugins: [require('./plugins/rehype-ol-start.js')],
+          showLastUpdateTime: true,
           showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/docs-ui.css'],
         },
         sitemap: {
           changefreq: 'weekly' as const,
@@ -92,6 +95,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Screenshots open full size on click.
+    zoom: {
+      selector: '.theme-doc-markdown img',
+      background: {light: 'rgb(255, 255, 255)', dark: 'rgb(18, 23, 31)'},
+      config: {margin: 24},
+    },
     image: 'img/skywonder-icon.png',
     metadata: [
       {name: 'description', content: 'Official device documentation for Skywonder GPS trackers, dashcams, and ADAS devices supported on the Traqcare platform. Hardware specs, wiring, configuration, platform onboarding, and SMS/GPRS command references.'},
