@@ -36,7 +36,9 @@
   --ifm-global-radius: 8px;
 }
 
-[data-theme='dark'] {
+/* `html` raises specificity: the CSS minifier merges same-selector blocks (this one joined custom.css's earlier
+   [data-theme='dark'] block), which put it before :root and let the light values win in dark mode. */
+html[data-theme='dark'] {
   --dx-ink: #e7ebf1;
   --dx-slate: #a4aebc;
   --dx-line: #2d3747;
