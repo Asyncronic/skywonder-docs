@@ -84,6 +84,8 @@ const config: Config = {
         sitemap: {
           changefreq: 'weekly' as const,
           priority: 0.5,
+          // The local-search page is a tool, not content.
+          ignorePatterns: ['/search/**'],
         },
       } satisfies Preset.Options,
     ],
