@@ -89,11 +89,11 @@ After wiring is complete, turn the ignition **ON** and confirm:
 | 4G | **Yellow blinking** → **Yellow solid** once online |
 | GPS | **Green blinking** → **Green solid** once positioned |
 
-If one of the LEDs never reaches the expected state, see [Troubleshooting](./troubleshooting).
+If one of the LEDs never reaches the expected state, see [Troubleshooting](./troubleshooting.md).
 
 ## 6. Continue Configuration
 
 With the device powered and LEDs healthy, continue to:
 
-- [Traqcam Connect — Algorithm & Calibration](./configure-app)
-- [Make It Online on Traqcare](./make-online)
+- [Traqcam Connect — Algorithm & Calibration](./configure-app.md)
+- [Make It Online on Traqcare](./make-online.md)

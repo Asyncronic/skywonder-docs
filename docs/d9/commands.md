@@ -22,7 +22,7 @@ After pairing to the device Wi-Fi (SSID = **device IMEI / Device ID**, password 
 | **Status Info** | Current device state (firmware, GPS, 4G, storage) |
 | **AI** | Toggle ADAS / DMS rendering, per-warning sensitivity, speed thresholds, and vehicle-geometry fields (Car Type, Camera Height, lens → bumper / wheels) |
 | **System** | System info, reboot, factory reset, format SD card, firmware version (tap once to toggle simulated speed for indoor testing) |
-| **Platform** | Change main/sub server address, port, protocol — used for [onboarding to Traqcare](./make-online) |
+| **Platform** | Change main/sub server address, port, protocol — used for [onboarding to Traqcare](./make-online.md) |
 | **Wlan** | Manage the device Wi-Fi hotspot (SSID / password) |
 | **Dial** | 4G dial-up / APN configuration |
 | **Real-time monitoring** | Live preview of front / cabin / rear cameras |
@@ -77,7 +77,7 @@ The following events are raised automatically and appear in the Traqcare **Alert
 | **Daily driving total** | Total driving time for the day exceeds the threshold |
 | **Parking timeout** | Parking duration exceeds the specified time |
 | **Emergency alarm** | SOS button pressed |
-| **ADAS / DMS alarms** | Any of the AI events in [AI Features](./ai-features) |
+| **ADAS / DMS alarms** | Any of the AI events in [AI Features](./ai-features.md) |
 
 :::tip
 Use **Manual alarm confirmation** to acknowledge an alarm from the platform — this is useful for dispatchers reviewing driver behaviour events.

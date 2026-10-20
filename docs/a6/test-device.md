@@ -8,7 +8,7 @@ keywords: [A6, dashcam, test, checklist, live video, playback, Sentry Mode, Clou
 
 # A6 — Test Your A6
 
-Use this checklist after [Make It Online on Traqcare](./make-online). It takes about **10 minutes**.
+Use this checklist after [Make It Online on Traqcare](./make-online.mdx). It takes about **10 minutes**.
 
 | # | Test | How to do it | ✅ Pass if… |
 |:-:|------|--------------|-------------|
@@ -22,4 +22,4 @@ Use this checklist after [Make It Online on Traqcare](./make-online). It takes a
 | 8 | **SOS button** | Press the **SOS** button. | An **SOS** alarm appears in Traqcare. To get a notification, set up an SOS alert first: see [Creating Alerts](https://docs.traqcare.com/docs/alerts/creating-alerts). |
 | 9 | **Parking recording** (hardwire kit only) | Turn the ignition off and leave the vehicle parked. | The A6 keeps recording in **Sentry Mode** / time-lapse. |
 
-If a test fails, see [Troubleshooting](./troubleshooting).
+If a test fails, see [Troubleshooting](./troubleshooting.md).

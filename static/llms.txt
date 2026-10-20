@@ -1,0 +1,8 @@
+# Skywonder Device Docs
+
+> Installation, set-up and troubleshooting guides for Skywonder dashcams, MDVRs, GPS trackers and sensors, written by the manufacturer. Each guide covers wiring, connecting the device to the Traqcare fleet platform (server d4.traqcare.com, JT/T 808), the AI driver-safety features and common faults.
+
+- Manufacturer: Skywonder (https://skywondergps.com), Shenzhen, China
+- Fleet platform the devices connect to: Traqcare (https://track.traqcare.com); platform user guide at https://docs.traqcare.com
+- Dashcam and MDVR product pages: https://dashcamforcars.com
+- API for live and historical tracking data: https://apidocs.traqcare.com

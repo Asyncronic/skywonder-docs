@@ -28,16 +28,16 @@ Each device guide covers the same things in the same order, so the flow is alway
 
 | Device | Category | Protocol | Status |
 |--------|----------|----------|--------|
-| [**D9 Driving Assistance**](./d9/overview) | Dual-camera ADAS + DMS dashcam | JT/T808, JT/T1078 | ✅ Available |
-| [**D22**](./d22/overview) | 2-channel 4G dashcam, optional ADAS + DMS | JT/T808, JT/T1078 | ✅ Available |
-| [**D12**](./d12/overview) | 10.1" touchscreen, up to 5 cameras, ADAS + DMS + BSD | JT/T808, JT/T1078 | ✅ Available |
-| [**A6**](./a6/overview) | 4G cloud dashcam, front 2K + rear 720P (Cloud Spirit app) | JT/T808 | ✅ Available |
+| [**D9 Driving Assistance**](./d9/overview.md) | Dual-camera ADAS + DMS dashcam | JT/T808, JT/T1078 | ✅ Available |
+| [**D22**](./d22/overview.mdx) | 2-channel 4G dashcam, optional ADAS + DMS | JT/T808, JT/T1078 | ✅ Available |
+| [**D12**](./d12/overview.mdx) | 10.1" touchscreen, up to 5 cameras, ADAS + DMS + BSD | JT/T808, JT/T1078 | ✅ Available |
+| [**A6**](./a6/overview.mdx) | 4G cloud dashcam, front 2K + rear 720P (Cloud Spirit app) | JT/T808 | ✅ Available |
 
 ## 📡 GPS Trackers
 
 | Device | Category | Protocol | Status |
 |--------|----------|----------|--------|
-| [**H8**](./h8/bluetooth-fuel-sensor) | GPS tracker with Bluetooth fuel sensor support | JT808 | ✅ Bluetooth fuel sensor guide |
+| [**H8**](./h8/bluetooth-fuel-sensor.mdx) | GPS tracker with Bluetooth fuel sensor support | JT808 | ✅ Bluetooth fuel sensor guide |
 | GT06 / GT06N | Wired GPS tracker | GT06 | 🕗 Coming soon |
 | JT/T808 Devices | Generic JT808 trackers | JT808 2013 / 2019 | 🕗 Coming soon |
 

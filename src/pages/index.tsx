@@ -218,7 +218,7 @@ function DeviceCatalogue(): ReactNode {
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Skywonder GPS Devices — Installation & Activation Guides"
+      title="Dashcam, MDVR and GPS Tracker Installation Guides"
       description="Official installation, configuration, and activation guides for Skywonder dashcams and GPS trackers supported by the Traqcare platform.">
       <HeroSection />
       <main>

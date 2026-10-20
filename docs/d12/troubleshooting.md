@@ -33,7 +33,7 @@ keywords: [D12, troubleshooting, offline, no video, camera, SD card, GPS, simula
 
 ## D12 is not online on Traqcare
 
-Check the **status icons** at the top right of the D12 screen first (see [status icons](./specifications#screen-status-icons)).
+Check the **status icons** at the top right of the D12 screen first (see [status icons](./specifications.md#screen-status-icons)).
 
 1. **4G icon grey:** check that the **4G antenna** is connected, the **SIM** has an active data plan and the SIM PIN is off. If your mobile operator needs an APN, set it in **Settings → APN**.
 2. **4G icon bright but platform icon grey:** open **Settings → Platform → Server** and confirm **Center 1** is `d4.traqcare.com`, port `5101`, protocol `2013`. Tap **Confirm**.
@@ -61,7 +61,7 @@ Check the **status icons** at the top right of the D12 screen first (see [status
 
 ## No AI alarms
 
-- AI alarms only trigger above **30 km/h**. To test while parked, set **Simulated speed** to `60`. See [Test the AI alarms](./test-device#test-the-ai-alarms).
+- AI alarms only trigger above **30 km/h**. To test while parked, set **Simulated speed** to `60`. See [Test the AI alarms](./test-device.mdx#test-the-ai-alarms).
 - In **Settings → AI**, check that each camera has the right job (**CH4 = DMS**, blind-spot cameras on CH1, CH2, CH3 and CH5).
 - The driver camera must see the driver's face clearly.
 

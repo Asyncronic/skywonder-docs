@@ -3,7 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Skywonder GPS Devices — Installation, Configuration & Activation Guide',
+  // Appended to every page title ("D9 — Overview | Skywonder Device Docs"), so keep it short.
+  title: 'Skywonder Device Docs',
   tagline: 'Official device documentation for every GPS tracker, dashcam, and ADAS device supported by the Traqcare platform. Install, configure, and bring your device online.',
   favicon: 'img/skywonder-icon.png',
 
@@ -11,8 +12,10 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://devices.traqcare.com',
+  url: 'https://docs.skywondergps.com',
   baseUrl: '/',
+  // Pages are served at /docs/x/; links, canonicals and the sitemap must use the same form (no redirect hop).
+  trailingSlash: true,
 
   organizationName: 'skywonder',
   projectName: 'skywonder-devices-docs',
@@ -31,6 +34,25 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      require.resolve('./plugins/seo-postbuild.js'),
+      {
+        siteName: 'Skywonder Device Docs',
+        publisher: {'@type': 'Organization', name: 'Skywonder', url: 'https://skywondergps.com', logo: 'https://docs.skywondergps.com/img/skywonder-icon.png'},
+        sectionLabels: {
+          intro: 'Start here',
+          d9: 'D9 AI dashcam',
+          d22: 'D22 (WD02) AI dashcam',
+          d12: 'D12 10.1-inch touchscreen MDVR',
+          a6: 'A6 4G cloud dashcam',
+          h8: 'H8 tracker with Bluetooth fuel sensor',
+          'video-settings': 'Video settings',
+        },
+      },
+    ],
+  ],
+
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -45,7 +67,6 @@ const config: Config = {
     ],
   ],
 
-  plugins: [],
 
   presets: [
     [
@@ -74,7 +95,7 @@ const config: Config = {
       {name: 'description', content: 'Official device documentation for Skywonder GPS trackers, dashcams, and ADAS devices supported on the Traqcare platform. Hardware specs, wiring, configuration, platform onboarding, and SMS/GPRS command references.'},
       {name: 'robots', content: 'index, follow'},
       {property: 'og:type', content: 'website'},
-      {property: 'og:site_name', content: 'Skywonder Devices Documentation'},
+      {property: 'og:site_name', content: 'Skywonder Device Docs'},
     ],
     colorMode: {
       defaultMode: 'light',

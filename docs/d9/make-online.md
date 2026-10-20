@@ -12,7 +12,7 @@ This is the primary onboarding flow. By the end of this page the D9 will appear 
 
 You need:
 
-- A powered and installed D9 (see [Installation](./installation)).
+- A powered and installed D9 (see [Installation](./installation.md)).
 - An active Traqcare account with enough **coins** to activate a device.
 - The **Device ID** (printed on the device / box).
 - The **Traqcam Connect** mobile app installed.
@@ -121,7 +121,7 @@ If the device does not come online within a few minutes, check:
 - **Device ID** in Traqcare **matches exactly** what Traqcam Connect shows.
 - **Platform settings** were **saved** in Traqcam Connect (re-open Platform to confirm).
 
-See [Troubleshooting](./troubleshooting) for the full checklist.
+See [Troubleshooting](./troubleshooting.md) for the full checklist.
 
 ## Done
 
@@ -130,4 +130,4 @@ The device is now online on Traqcare. You can:
 - Stream live video from Map View.
 - Pull back recorded footage from **Video Playback**.
 - Receive AI alarms (ADAS / DMS) on the **Alerts** page.
-- Send remote commands — see [Commands](./commands).
+- Send remote commands — see [Commands](./commands.md).

@@ -11,7 +11,7 @@ keywords: [D9, ADAS, DMS, fatigue, distraction, smoking, phone, seatbelt, lane d
 The D9 uses on-device machine vision to automatically identify road hazards and unsafe driver behaviours. Every detected event triggers a **local voice alarm** for the driver and is **synchronised to the Traqcare platform** as an alert.
 
 :::note
-**Global trigger condition.** All AI algorithms require vehicle speed > **30 km/h** by default. Outdoor testing uses GPS speed. For indoor / bench testing, use simulated-speed mode (see [Traqcam Connect Configuration](./configure-app#6-verify-ai-triggers)).
+**Global trigger condition.** All AI algorithms require vehicle speed > **30 km/h** by default. Outdoor testing uses GPS speed. For indoor / bench testing, use simulated-speed mode (see [Traqcam Connect Configuration](./configure-app.md#6-verify-ai-triggers)).
 :::
 
 :::warning

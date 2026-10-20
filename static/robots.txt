@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devices.traqcare.com/sitemap.xml
+Sitemap: https://docs.skywondergps.com/sitemap.xml

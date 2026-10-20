@@ -12,7 +12,7 @@ keywords: [D9, troubleshooting, recording invalid, no audio, blurry, heat, offli
 
 Run through these in order before deeper debugging:
 
-1. **LEDs** — see the LED table in [Specifications](./specifications#led-indicators).
+1. **LEDs** — see the LED table in [Specifications](./specifications.md#led-indicators).
 2. **Power** — multimeter on B+/GND at the device plug. Expect **9–36 V**.
 3. **SIM** — insert in a phone, verify data works, check PIN is disabled.
 4. **SD card** — genuine Class 10+, FAT32, < 256 GB.

@@ -9,7 +9,7 @@ keywords: [D22, WD02, installation, SIM card, TF card, wiring, ACC, mounting]
 # D22 — Installation
 
 :::tip Testing before installing?
-You can set up and test the D22 on a desk first. Do steps 1 and 2 below with a 12 V power supply, then go to [Make It Online on Traqcare](./make-online). Mount it in the vehicle once everything works.
+You can set up and test the D22 on a desk first. Do steps 1 and 2 below with a 12 V power supply, then go to [Make It Online on Traqcare](./make-online.mdx). Mount it in the vehicle once everything works.
 :::
 
 ## 1. Insert the SIM card and memory card
@@ -49,4 +49,4 @@ Mount the D22 at the **top of the windshield**, near the centre. Make sure that:
 
 Run the cables neatly along the trim so they don't hang near the driver or the pedals.
 
-**Next:** [Make It Online on Traqcare](./make-online)
+**Next:** [Make It Online on Traqcare](./make-online.mdx)

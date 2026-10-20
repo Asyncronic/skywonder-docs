@@ -60,13 +60,13 @@ Configurations may vary slightly between countries and regions.
 - **Dimensions:** 116 × 66 × 38 mm
 - **Operating temperature:** −20 °C to +70 °C
 
-For the full table, see [Specifications](./specifications).
+For the full table, see [Specifications](./specifications.md).
 
 ## Next Steps
 
-1. Check the full [Specifications](./specifications).
-2. Mount and wire the device — [Installation](./installation).
-3. Pair the device with the **Traqcam Connect** app and calibrate ADAS/DMS — [Traqcam Connect Configuration](./configure-app).
-4. Point it at Traqcare and activate — [Make It Online on Traqcare](./make-online).
-5. Tune AI thresholds — [AI Features (ADAS & DMS)](./ai-features).
-6. Send remote commands — [Commands](./commands).
+1. Check the full [Specifications](./specifications.md).
+2. Mount and wire the device — [Installation](./installation.md).
+3. Pair the device with the **Traqcam Connect** app and calibrate ADAS/DMS — [Traqcam Connect Configuration](./configure-app.md).
+4. Point it at Traqcare and activate — [Make It Online on Traqcare](./make-online.md).
+5. Tune AI thresholds — [AI Features (ADAS & DMS)](./ai-features.md).
+6. Send remote commands — [Commands](./commands.md).

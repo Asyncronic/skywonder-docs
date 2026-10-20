@@ -11,7 +11,7 @@ keywords: [D9, Traqcam Connect, ADAS calibration, DMS calibration, AI settings, 
 **Traqcam Connect** is the official mobile app for configuring every camera device supported by Traqcare, including the D9. Use it to preview the cameras, tune the AI algorithms, calibrate ADAS / DMS, and point the device at the Traqcare platform.
 
 :::info
-Traqcam Connect handles **both** local device configuration and Traqcare platform onboarding. For the step-by-step onboarding flow, see [Make It Online on Traqcare](./make-online).
+Traqcam Connect handles **both** local device configuration and Traqcare platform onboarding. For the step-by-step onboarding flow, see [Make It Online on Traqcare](./make-online.md).
 :::
 
 ## Video Walkthrough
@@ -38,7 +38,7 @@ Watch the short video below for a hands-on walkthrough of using Traqcam Connect 
 
 ## 2. Connect to the Device's Wi-Fi
 
-1. Install the D9 and power it on according to the [Installation guide](./installation).
+1. Install the D9 and power it on according to the [Installation guide](./installation.md).
 2. Press the **Wi-Fi button** on the side of the D9 to enable its Wi-Fi hotspot.
 3. On your phone, open Wi-Fi settings and connect to the D9 hotspot.
    - **SSID:** the **device IMEI / Device ID** (printed on the device or the box).
@@ -57,7 +57,7 @@ From the Traqcam Connect dashboard:
 2. Turn on:
    - **ADAS Render** — draws lane / vehicle overlays on the front camera.
    - **DMS Render** — draws face / seatbelt boxes on the cabin camera.
-3. Review and optionally adjust each sub-warning (Fatigue, Distraction, Smoking, Calling, Seatbelt Detection, etc.) — see [AI Features](./ai-features) for the default thresholds.
+3. Review and optionally adjust each sub-warning (Fatigue, Distraction, Smoking, Calling, Seatbelt Detection, etc.) — see [AI Features](./ai-features.md) for the default thresholds.
 4. Set the **Steering Wheel Direction** to **Left** or **Right** to match your vehicle.
 
 ## 4. Enter Vehicle Geometry (Advanced)
@@ -107,4 +107,4 @@ For initial testing you have two options:
 
 ## Next Step
 
-Proceed to [Make It Online on Traqcare](./make-online) to point the device at the Traqcare platform and register it in your account.
+Proceed to [Make It Online on Traqcare](./make-online.md) to point the device at the Traqcare platform and register it in your account.

@@ -57,7 +57,7 @@ Check these in order:
 ## No AI alarms
 
 - AI only works on a D22 ordered **with DMS + ADAS**.
-- AI alarms only trigger while **driving**. To test while parked, use **demo mode**: see [AI Features](./ai-features#3-mode-settings--normal-and-demo).
+- AI alarms only trigger while **driving**. To test while parked, use **demo mode**: see [AI Features](./ai-features.mdx#3-mode-settings--normal-and-demo).
 - Check that the alarm is turned on in **AI → Alarm Settings**.
 - The driver camera must see the driver's face clearly, and the road camera must see the road.
 
