@@ -1,0 +1,91 @@
+---
+id: installation
+title: D12 — Installation
+description: Insert the SIM and SD card, connect the cameras and antennas, and wire the power for the D12.
+sidebar_position: 3
+keywords: [D12, installation, SIM card, SD card, mSATA, cameras, CH1, CH4, GPS antenna, 4G antenna, B+, ACC, GND, wiring]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D12 — Installation
+
+:::tip Testing before installing?
+You can set up and test the D12 on a desk first with a 12 V power supply. Do steps 1 to 4 below, then go to [Make It Online on Traqcare](./make-online). Install it in the vehicle once everything works.
+:::
+
+## 1. Insert the SIM card and SD card
+
+Do this **with the power off**.
+
+1. Use a screwdriver to open the small cover on the **top edge** of the D12.
+2. Insert the **SIM card** and the **SD card** into the slots marked **SIM** and **SD**.
+3. Close the cover again.
+
+- **SIM card:** must have an active **mobile data plan**, with the SIM PIN turned off.
+- **SD card:** good quality, Class 10 or faster, up to 512 GB.
+- **mSATA hard drive (optional):** if you ordered one, it fits in the **MINI SATA** compartment on the back.
+
+<Shots>
+  <Shot src="/img/d12/d12-card-slots.jpg" alt="Open card cover on top of the D12 showing the SD and SIM slots" width={420} caption="SIM and SD slots under the top cover" />
+</Shots>
+
+## 2. Connect the cameras and antennas
+
+All connectors are on the **back** of the D12, labelled from left to right: **GPS · CH5 · CH4 · CH3 · CH2 · CH1 · USB · 4G**.
+
+1. **Cameras:** plug each camera into its channel (**CH1 to CH5**) and screw the connector ring on firmly. Use the channel that matches what the camera is for:
+
+| Channel | Camera |
+|---------|--------|
+| **CH1** | Front blind-spot (BSD) camera |
+| **CH2** | Rear blind-spot (BSD) camera |
+| **CH3** | Left blind-spot (BSD) camera |
+| **CH4** | **Driver (DMS) camera**, facing the driver |
+| **CH5** | Right blind-spot (BSD) camera |
+
+2. **GPS antenna:** screw it onto the **GPS** connector (far left).
+3. **4G antenna:** screw it onto the **4G** connector (far right).
+4. **Power cable:** connect the power / video input cable (the one with the labelled wires) to the D12 and tighten the connector.
+
+<Shots>
+  <Shot src="/img/d12/d12-back-connected.jpg" alt="Back of the D12 with cameras on CH1 to CH5 and the GPS and 4G antennas connected" width={420} caption="Cameras and antennas connected" />
+  <Shot src="/img/d12/d12-camera-cables.jpg" alt="Camera cables with screw-on connectors" width={420} caption="Screw the camera connectors on firmly" />
+</Shots>
+
+## 3. Connect the power
+
+The D12 runs on **9–36 V DC**, which covers both 12 V and 24 V vehicles. The power wires are labelled.
+
+| Wire label | In the vehicle | On a desk (12 V power supply) |
+|------------|----------------|-------------------------------|
+| **B+** | Battery **+** (constant power) | **+** |
+| **ACC** | A wire that has power only when the ignition is on | **+** (together with B+) |
+| **GND** | Ground / chassis **−** | **−** |
+
+On a desk, connect **ACC to + as well**. This tells the D12 the "ignition" is on, so it stays on. When ACC has no power, the D12 turns off after a delay or goes to sleep.
+
+Leave the other wires (turn signals, SOS, inputs, RS232) unconnected unless you are installing those accessories.
+
+<Shots>
+  <Shot src="/img/d12/d12-power-wires.jpg" alt="B+ and ACC wires clipped together to the red positive clip, GND to the black clip" width={420} caption="Desk test: B+ and ACC to +, GND to −" />
+  <Shot src="/img/d12/d12-power-cable.jpg" alt="D12 power cable with labelled wires" width={420} caption="The power cable" />
+</Shots>
+
+:::warning
+Double-check **B+** and **GND** before you switch on. The D12 has reverse-polarity protection, but always connect carefully.
+:::
+
+## 4. Switch on
+
+Switch on the power. The D12 starts and shows the **camera views** on the screen.
+
+## 5. Install in the vehicle
+
+- Mount the D12 with the metal bracket where the driver can see the screen **without it blocking the view of the road**.
+- Mount the **driver (DMS) camera** so it sees the **driver's face clearly**.
+- Mount the blind-spot cameras so each one covers its side of the vehicle.
+- Do **not** install anything in front of or on top of an airbag.
+- Run the cables neatly along the trim, away from the pedals and steering.
+
+**Next:** [Make It Online on Traqcare](./make-online)

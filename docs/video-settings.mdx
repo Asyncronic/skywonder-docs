@@ -1,0 +1,148 @@
+---
+id: video-settings
+title: Change Video Encoding, Frame Rate & Quality
+description: How to change the encoding format (H.264 / H.265), resolution, frame rate and picture quality of WD02, S202 and D10 dashcams with the Traqcam Connect app.
+keywords: [WD02, D22, S202, D10, Traqcam Connect, video settings, encoding, H.264, H.265, resolution, frame rate, quality, main stream, sub stream]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# Change Video Encoding, Frame Rate & Quality
+
+**Applies to:** WD02 dashcams (the [D22](./d22/overview) shows as **WD02** in the app), **S202** and **D10**.
+
+You can change how the dashcam records video (the **encoding format**, **resolution**, **frame rate** and **picture quality**) in the **Traqcam Connect** app, free on Google Play and the App Store.
+
+How the app connects depends on the model:
+
+| Model | How Traqcam Connect connects |
+|-------|------------------------------|
+| **WD02** (D22) and **D10** | Directly to the dashcam's own **Wi-Fi**. No internet needed. Follow Steps 1–6 below. |
+| **S202** | Over the dashcam's **4G** connection (cloud). No Wi-Fi needed. See [S202: connect over 4G](#s202-connect-over-4g) first. |
+
+**You will need:**
+
+- The dashcam, powered on.
+- For WD02 and D10: the dashcam's **IMEI number** (on the label on the device or its box).
+- For S202: the dashcam's **Device ID**, and a SIM card with mobile data in the dashcam.
+
+## The steps at a glance
+
+| Step | What you do |
+|:----:|-------------|
+| 1 | Connect your phone to the dashcam's Wi-Fi (WD02, D10) |
+| 2 | Log in to the dashcam in Traqcam Connect (WD02, D10) |
+| 3 | Open **Main Stream** or **Sub Stream** |
+| 4 | Change the encoding format (H.264 / H.265) |
+| 5 | Change resolution, frame rate and quality for each camera |
+| 6 | Tap **Save** |
+
+:::tip Main Stream or Sub Stream?
+The dashcam makes two versions of the video:
+
+- **Main Stream:** the full-quality video. This is usually what the dashcam records to its memory card.
+- **Sub Stream:** a lighter, smaller version. This is usually what is sent over the mobile network for live view.
+
+Each stream has its own settings, so change the one you need, or both.
+:::
+
+## S202: connect over 4G
+
+The S202 doesn't use Wi-Fi for this. Traqcam Connect reaches it over its 4G connection, so the S202 must be powered on with a working SIM card.
+
+1. Open **Traqcam Connect**.
+2. Tap **S202 (Cloud)**, shown as "Internet device — no WiFi needed".
+3. Enter the S202's **Device ID** and continue.
+4. The S202's settings page opens. Find its video (stream) settings and change the encoding format, resolution, frame rate and quality as described in Steps 3–6. The S202 page looks different from the screenshots below, but the settings work the same way.
+
+:::note "Device Not Connected"?
+If the app says **Device Not Connected**, the S202 isn't linked to the cloud yet. The app shows a command to send to the S202: send it as an SMS to the S202's SIM number, or as a GPRS command from Traqcare. Then tap **Retry**. If it still doesn't connect, contact support.
+:::
+
+## Step 1 — Connect your phone to the dashcam's Wi-Fi
+
+*WD02 and D10 only.* The dashcam turns on its own Wi-Fi automatically when it powers up.
+
+1. On your phone, open **Settings → Wi-Fi**.
+2. Find the network whose name is the dashcam's **IMEI number** (for example `568080023426`).
+3. Connect with the password **`88888888`** (eight 8s).
+
+<Shots>
+  <Shot src="/img/video-settings/wifi.jpg" alt="Phone Wi-Fi list with the dashcam's network, named after its IMEI number, highlighted" width={240} caption="1. Connect to the network named after the IMEI. Password: 88888888" />
+</Shots>
+
+:::note "No internet connection" is normal
+Your phone may say the dashcam's Wi-Fi has **no internet**. That's expected, so stay connected. If your phone keeps switching to mobile data or another Wi-Fi, turn off mobile data until you finish.
+:::
+
+## Step 2 — Log in to the dashcam
+
+*WD02 and D10 only.*
+
+1. Open **Traqcam Connect**.
+2. Enter the password **`111111`** (six 1s) and sign in. The app may show **Auto-Connecting** for a few seconds while it finds the dashcam.
+
+The settings page opens with the device name (for example **WD02**) at the top.
+
+<Shots>
+  <Shot src="/img/video-settings/login.jpg" alt="Traqcam Connect login screen with the Password field highlighted" width={240} caption="2. Password: 111111" />
+</Shots>
+
+## Step 3 — Open Main Stream or Sub Stream
+
+On the settings page, scroll down to **Record Settings** and tap **Main Stream** or **Sub Stream**.
+
+<Shots>
+  <Shot src="/img/video-settings/home-record-settings.jpg" alt="Record Settings section with Main Stream and Sub Stream highlighted" width={360} caption="3. Main Stream or Sub Stream, under Record Settings" />
+</Shots>
+
+## Step 4 — Change the encoding format
+
+1. Tap **Encode type**.
+2. Choose **H264** or **H265**.
+3. Tap **Save**.
+
+<Shots>
+  <Shot src="/img/video-settings/main-stream.jpg" alt="Main Stream page with the channel rows, Encode type and Save button highlighted" width={240} caption="4. Encode type · 5. Camera channels · 6. Save" />
+  <Shot src="/img/video-settings/encode-type.jpg" alt="Encode type list with H264 and H265" width={240} caption="4. Choose H264 or H265" />
+</Shots>
+
+| Format | When to use it |
+|--------|----------------|
+| **H.264** | The most widely supported format. Choose it if you play the video files on other software and aren't sure it supports H.265. |
+| **H.265** | Smaller files and less mobile data for the same picture quality, so more video fits on the memory card. |
+
+Both formats work with live video on Traqcare.
+
+## Step 5 — Change resolution, frame rate and quality for each camera
+
+Each camera has its own settings: **CH1** is camera 1 and **CH2** is camera 2.
+
+1. On the Main Stream (or Sub Stream) page, tap **channel CH1** or **channel CH2**.
+2. Tap a setting and choose a new value:
+   - **Resolution:** the size of the picture. Main Stream offers sizes such as **1080P**; Sub Stream offers **D1**, **HD1**, **CIF** and **QHD1**.
+   - **Framerate:** how many pictures per second. A higher number gives smoother video.
+   - **Quality:** the picture quality level.
+3. Tap **Save**.
+4. Repeat for the other camera if needed.
+
+<Shots>
+  <Shot src="/img/video-settings/channel-settings.jpg" alt="CH1 settings with Resolution, Framerate and Quality highlighted, and the Save button" width={240} caption="5. Resolution, Framerate, Quality · 6. Save" />
+  <Shot src="/img/video-settings/sub-stream-resolution.jpg" alt="Sub Stream resolution list with D1, HD1, CIF and QHD1" width={240} caption="Sub Stream resolution options" />
+</Shots>
+
+:::caution Leave Enable switched on
+The **Enable** switch at the top of each camera's page turns that camera on or off. Leave it on, or that camera stops recording.
+:::
+
+## Step 6 — Save and finish
+
+Make sure you tapped **Save** on every page you changed.
+
+When you're done, disconnect your phone from the dashcam's Wi-Fi (WD02, D10).
+
+## Good to know
+
+- **Higher settings use more data and storage.** A higher resolution, frame rate or quality gives a sharper, smoother picture, but uses more memory-card space and more mobile data for live view.
+- **To save mobile data**, lower the **Sub Stream** settings and keep the **Main Stream** high, so the recorded video stays sharp.
+- **Not sure what to choose?** Keep the default values, or contact support.

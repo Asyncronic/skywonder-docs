@@ -122,12 +122,16 @@ const config: Config = {
           items: [
             {label: 'All Dashcams', to: '/docs/intro#-dashcams'},
             {label: 'D9 Driving Assistance', to: '/docs/d9/overview'},
+            {label: 'D22 4G Dashcam', to: '/docs/d22/overview'},
+            {label: 'D12 AI Display', to: '/docs/d12/overview'},
+            {label: 'A6 4G Dashcam', to: '/docs/a6/overview'},
           ],
         },
         {
           title: 'GPS Trackers',
           items: [
             {label: 'All Trackers', to: '/docs/intro#-gps-trackers'},
+            {label: 'H8 Bluetooth Fuel Sensor', to: '/docs/h8/bluetooth-fuel-sensor'},
           ],
         },
         {

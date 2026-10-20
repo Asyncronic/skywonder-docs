@@ -24,21 +24,67 @@ const sidebars: SidebarsConfig = {
             'd9/troubleshooting',
           ],
         },
+        {
+          type: 'category',
+          label: 'D22 — 2-Channel 4G Dashcam',
+          collapsed: false,
+          items: [
+            'd22/overview',
+            'd22/specifications',
+            'd22/installation',
+            'd22/make-online',
+            'd22/test-device',
+            'd22/ai-features',
+            'd22/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'D12 — 10.1" AI Display (5 Cameras)',
+          collapsed: false,
+          items: [
+            'd12/overview',
+            'd12/specifications',
+            'd12/installation',
+            'd12/make-online',
+            'd12/test-device',
+            'd12/ai-features',
+            'd12/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'A6 — 4G Wi-Fi Dashcam',
+          collapsed: false,
+          items: [
+            'a6/overview',
+            'a6/specifications',
+            'a6/installation',
+            'a6/make-online',
+            'a6/test-device',
+            'a6/troubleshooting',
+          ],
+        },
+        {
+          type: 'doc',
+          id: 'video-settings',
+          label: 'Video Settings (WD02 / S202 / D10)',
+        },
       ],
     },
-    // GPS Trackers — add a category here when the first tracker guide is published, e.g.:
-    // {
-    //   type: 'category',
-    //   label: 'GPS Trackers',
-    //   collapsed: false,
-    //   items: [
-    //     {
-    //       type: 'category',
-    //       label: 'GT06 / GT06N',
-    //       items: ['gt06/overview', 'gt06/installation', 'gt06/make-online', 'gt06/commands', 'gt06/troubleshooting'],
-    //     },
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'GPS Trackers',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'H8',
+          collapsed: false,
+          items: ['h8/bluetooth-fuel-sensor'],
+        },
+      ],
+    },
   ],
 };
 

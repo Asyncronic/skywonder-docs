@@ -1,0 +1,191 @@
+---
+id: make-online
+title: A6 — Make It Online on Traqcare
+description: Step-by-step guide to set the A6 dashcam to Traqcare with the Cloud Spirit app, find its Device ID, add it to your account, and watch live video.
+sidebar_position: 2
+keywords: [A6, dashcam, Cloud Spirit, Traqcare, JT808, 5101, d4.traqcare.com, Device ID, phone number, Sentry Mode, time-lapse]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# A6 — Make It Online on Traqcare
+
+By the end of this page your A6 is **online on Traqcare** and you can watch its live video.
+
+**You will need:**
+
+- The A6, with the SIM card and memory card inserted and power connected (see [Installation](./installation)).
+- A smartphone with the free **Cloud Spirit** app, from **Google Play** (Android) or the **App Store** (iPhone).
+- A login at [track.traqcare.com](https://track.traqcare.com). **Coins** to activate the device are helpful but not required now: you can activate later (see Step 6).
+
+## The steps at a glance
+
+| Step | What you do | Where |
+|:----:|-------------|-------|
+| 1 | Turn on the A6's Wi-Fi and connect your phone | A6 + phone |
+| 2 | Open Cloud Spirit and check the live video | Cloud Spirit |
+| 3 | Point the A6 at Traqcare | Cloud Spirit |
+| 4 | Turn on parking recording | Cloud Spirit |
+| 5 | Find your Device ID | Cloud Spirit |
+| 6 | Add the A6 to your account | Traqcare |
+| 7 | Turn on the sensors and set up the cameras | Traqcare |
+| 8 | Check that it's online and watch live video | Traqcare |
+
+## Step 1 — Turn on the A6's Wi-Fi and connect your phone
+
+1. With the A6 switched on, **press the power button (⏻) twice quickly**. The A6 makes a sound to confirm its Wi-Fi is on.
+
+<Shots>
+  <Shot src="/img/a6/a6-buttons.png" alt="A6 button panel with the power button at the top and the SOS button below it" width={480} caption="Press the power button (⏻) twice quickly" />
+</Shots>
+
+2. On your phone, open **Settings → Wi-Fi**.
+3. Connect to the network named **A6-xxxx** (for example `A6_0d7a`).
+4. Enter the password **`12345678`**.
+
+<Shots>
+  <Shot src="/img/a6/phone-wifi.jpg" alt="Phone Wi-Fi list connected to A6_0d7a" width={220} caption="Connect to A6-xxxx, password 12345678" />
+</Shots>
+
+:::note "No internet connection" is normal
+Your phone may say the A6's Wi-Fi has **no internet**. That's expected, so stay connected. If your phone keeps switching back to mobile data or another Wi-Fi, turn off mobile data until you finish Step 5.
+:::
+
+## Step 2 — Open Cloud Spirit and check the live video
+
+Open **Cloud Spirit**. It finds the A6 automatically, and the **Live Video** tab shows the camera picture.
+
+## Step 3 — Point the A6 at Traqcare
+
+1. Tap the **settings (gear) icon** at the top right.
+2. Tap **JT808**.
+3. Change these two fields:
+
+| Field on the screen | Meaning | Enter |
+|---------------------|---------|-------|
+| **主IP** | Main IP | `d4.traqcare.com` |
+| **主端口** | Main port | `5101` |
+
+4. Leave the other fields (IP2, Port2 and the rest) as they are.
+5. Tap **Save**.
+
+<Shots>
+  <Shot src="/img/a6/app-home.jpg" alt="Cloud Spirit home screen with the settings gear highlighted at the top right" width={240} caption="1. Tap the gear" />
+  <Shot src="/img/a6/app-settings.jpg" alt="Cloud Spirit Settings with JT808 highlighted in red" width={240} caption="2. Tap JT808 (in red)" />
+  <Shot src="/img/a6/app-jt808.jpg" alt="JT808 page with Main IP d4.traqcare.com, Main port 5101 and the Save button highlighted in red" width={240} caption="3. Change Main IP (主IP) and Main port (主端口), then tap Save" />
+</Shots>
+
+## Step 4 — Turn on parking recording
+
+1. Go back to **Settings** and tap **General**.
+2. Tap **TLR** (time-lapse recording), choose **24H** and tap **Confirm**.
+3. Scroll down to **Parking Surveillance** and switch **Sentry Mode** on.
+
+<Shots>
+  <Shot src="/img/a6/app-settings-general.jpg" alt="Settings with General highlighted" width={200} caption="1. General" />
+  <Shot src="/img/a6/app-tlr.jpg" alt="TLR options Off, 12H, 24H with 24H selected" width={200} caption="2. TLR: 24H" />
+  <Shot src="/img/a6/app-sentry-mode.jpg" alt="General settings with Sentry Mode switched on" width={200} caption="3. Sentry Mode on" />
+</Shots>
+
+These keep recording while the vehicle is parked, as long as the A6 has power (see [Installation](./installation#3-connect-the-power)).
+
+## Step 5 — Find your Device ID
+
+In Cloud Spirit, go to **Settings → JT808** and look for **Phone Number**. **This number is the A6's Device ID.** Write it down.
+
+:::warning Remove the leading 0
+If the Device ID starts with **0**, leave out that first 0 everywhere in Traqcare. Traqcare never uses the leading 0.
+
+| Phone Number in Cloud Spirit | Device ID for Traqcare |
+|------------------------------|------------------------|
+| `05848956245` | `5848956245` |
+:::
+
+You can now disconnect your phone from the A6's Wi-Fi.
+
+## Step 6 — Add the A6 to your Traqcare account
+
+1. Log in at [track.traqcare.com](https://track.traqcare.com).
+2. Go to **Settings** (gear icon) → **Devices** → **Add Device**.
+
+<Shots>
+  <Shot src="/img/a6/traqcare-devices.png" alt="Traqcare Settings, Devices tab with the Add Device button highlighted" width={720} />
+</Shots>
+
+3. Fill in the **Device Details** tab:
+
+| Field | What to enter |
+|-------|---------------|
+| **Client** | The account that will own the A6 |
+| **IMEI / Unique ID** | The **Device ID** from Step 5 (no leading 0) |
+| **Protocol / Port** | **JT808 (5101)** |
+| **Model Name** | `A6` |
+| **Device Type** | **Dashcam** |
+| **Device Timezone** | The vehicle's time zone |
+| **Object Name** | A name for the vehicle, anything you like |
+| **Object Type** | **Car** (or the right vehicle type) |
+| **Subscription Term** | Choose a plan if you see one. Coins are used to activate the device. **If the list is empty, leave it blank**: see the note below. |
+
+<Shots>
+  <Shot src="/img/a6/traqcare-add-device.png" alt="Device Details tab with protocol JT808 (5101), model A6 and Device Type Dashcam highlighted in red" width={620} caption="Device Type must be Dashcam" />
+</Shots>
+
+:::info No plans in "Subscription Term"? You can activate later
+Each plan in the list shows how many coins you have, for example *1 Year (Available Coins: 20)*. **Most new accounts have no coins yet, so the list is empty.** That's fine:
+
+1. Leave **Subscription Term** blank and finish adding the device (Step 7). The A6 is saved in your account but **not activated yet**.
+2. **Get coins:** ask your supplier (Skywonder or the reseller you bought the A6 from) to add coins to your account.
+3. **Activate:** go to **Settings → Devices**, find your A6 and click **Activate** in its row. Choose a plan and confirm.
+
+If you don't see an **Activate** link, your supplier can activate the device for you.
+
+The A6 needs to be **activated** before it shows up as online and before you can use it on Traqcare.
+:::
+
+## Step 7 — Turn on the sensors and set up the cameras
+
+1. Open the **Device Sensors** tab and switch these **on**:
+
+| Sensor | Parameter | Reading Type |
+|--------|-----------|--------------|
+| **IGNITION** | `acc` | Direct |
+| **POWER** | `power` | Direct |
+| **CAMERA** | — | — |
+| **VIDEO CAMERA** | — | — |
+
+Leave the other sensors off.
+
+<Shots>
+  <Shot src="/img/a6/traqcare-sensors-1.png" alt="Device Sensors tab with IGNITION (acc) and POWER (power) switched on" width={420} caption="IGNITION and POWER" />
+  <Shot src="/img/a6/traqcare-sensors-2.png" alt="Device Sensors tab with CAMERA and VIDEO CAMERA switched on" width={420} caption="CAMERA and VIDEO CAMERA" />
+</Shots>
+
+2. A **Camera Settings** tab appears. Open it and fill in:
+
+| Field | What to enter |
+|-------|---------------|
+| **Number of Channels** | **2** (front and rear/cabin camera) |
+| **DeviceId** | The **same Device ID** you entered in Step 6 (no leading 0) |
+| **Video Platform** | **Traqcare** |
+
+3. Click **Submit**. If you chose a plan in Step 6, the coins are used and the A6 is activated. If you didn't, activate it later (see the note in Step 6).
+
+<Shots>
+  <Shot src="/img/a6/traqcare-camera-settings.png" alt="Camera Settings tab with 2 channels, device ID and video platform Traqcare" width={620} />
+</Shots>
+
+## Step 8 — Check that it's online and watch live video
+
+1. Open the **Map View** in Traqcare.
+2. Find your A6 in the vehicle list. Within a few minutes it turns **online** (coloured instead of grey).
+3. Click the **camera icon** next to the vehicle to open live video.
+
+<Shots>
+  <Shot src="/img/a6/traqcare-map-camera.png" alt="Traqcare Map View with the camera icon next to a vehicle highlighted" width={720} caption="Click the camera icon next to the vehicle" />
+</Shots>
+
+If you see live video from both cameras, **your A6 is set up correctly**. 🎉
+
+Not online after 5 minutes? See [Troubleshooting](./troubleshooting#a6-is-not-online-on-traqcare).
+
+**Next:** [Test Your A6](./test-device)

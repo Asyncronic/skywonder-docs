@@ -1,0 +1,172 @@
+---
+id: make-online
+title: D22 — Make It Online on Traqcare
+description: Step-by-step guide to point the D22 at Traqcare with the Traqcam Connect app, add it to your account, and watch live video.
+sidebar_position: 4
+keywords: [D22, WD02, Traqcare, Traqcam Connect, onboarding, activation, JT808, 5101, d4.traqcare.com, Device ID]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D22 — Make It Online on Traqcare
+
+By the end of this page your D22 is **online on Traqcare** and you can watch its live video.
+
+**You will need:**
+
+- The D22, with the SIM card and memory card inserted and power connected (see [Installation](./installation)).
+- The **Device ID**, printed on the label on the D22 or on its box.
+- A smartphone with the **Traqcam Connect** app (free on the App Store and Google Play).
+- A Traqcare login at [track.traqcare.com](https://track.traqcare.com). **Coins** to activate the device are helpful but not required now: you can activate later (see Step 4).
+
+## The steps at a glance
+
+| Step | What you do | Where |
+|:----:|-------------|-------|
+| 1 | Connect your phone to the D22's Wi-Fi | Phone |
+| 2 | Log in to the D22 | Traqcam Connect |
+| 3 | Point the D22 at Traqcare | Traqcam Connect |
+| 4 | Add the D22 to your account | Traqcare |
+| 5 | Turn on the camera sensors | Traqcare |
+| 6 | Set up the cameras | Traqcare |
+| 7 | Check that it's online and watch live video | Traqcare |
+
+## Step 1 — Connect your phone to the D22's Wi-Fi
+
+The D22 turns on its own Wi-Fi automatically when it powers up.
+
+1. On your phone, open **Settings → Wi-Fi**.
+2. Find the network whose name is the D22's **IMEI number** (a long number, for example `568080023426`).
+3. Connect with the password **`88888888`** (eight 8s).
+
+:::note "No internet connection" is normal
+Your phone may say the D22's Wi-Fi has **no internet**. That's expected, so stay connected. If your phone keeps switching back to mobile data or another Wi-Fi, turn off mobile data until you finish Step 3.
+:::
+
+## Step 2 — Log in to the D22 in Traqcam Connect
+
+1. Open **Traqcam Connect**.
+2. Tap **Settings** at the bottom of the screen.
+3. Enter the password **`111111`** (six 1s) and tap **Sign In**.
+
+The settings page opens with the device name **WD02** at the top. This is your D22.
+
+<Shots>
+  <Shot src="/img/d22/app-login.jpg" alt="Traqcam Connect login screen with password field and Sign In button" width={220} caption="Password: 111111" />
+</Shots>
+
+## Step 3 — Point the D22 at Traqcare
+
+1. Under **Network Settings**, tap **Center Server**.
+2. Tap **Center Server1**.
+3. Set these values:
+
+| Field | Value |
+|-------|-------|
+| **Protocol** | **JT808-2013** (shown as `JT808-2013-M1`) |
+| **Server IP** | `d4.traqcare.com` |
+| **Server Port** | `5101` |
+| Gps Interval | Leave as it is (`30`) |
+
+4. Tap **Save**.
+
+<Shots>
+  <Shot src="/img/d22/app-home-center-server.png" alt="Settings page with Center Server highlighted under Network Settings" width={210} caption="1. Center Server" />
+  <Shot src="/img/d22/app-center-server-list.jpg" alt="Center Server list with Center Server1 at the top" width={210} caption="2. Center Server1" />
+  <Shot src="/img/d22/app-center-server1.jpg" alt="Center Server1 with protocol JT808-2013-M1, server d4.traqcare.com and port 5101" width={210} caption="3. Enter the values and Save" />
+</Shots>
+
+You can now disconnect your phone from the D22's Wi-Fi.
+
+## Step 4 — Add the D22 to your Traqcare account
+
+1. Log in at [track.traqcare.com](https://track.traqcare.com).
+2. Go to **Settings** (gear icon) → **Devices** → **Add Device**.
+
+<Shots>
+  <Shot src="/img/d22/traqcare-devices.png" alt="Traqcare Settings, Devices tab with the Add Device button highlighted" width={720} />
+</Shots>
+
+3. Fill in the **Device Details** tab:
+
+| Field | What to enter |
+|-------|---------------|
+| **Client** | The account that will own the D22 |
+| **IMEI / Unique ID** | The **Device ID** from the label, **without the leading 0** (see the box below) |
+| **Protocol / Port** | **JT808 (5101)** |
+| **Model Name** | `D22` |
+| **Device Type** | **Wired** |
+| **Device Timezone** | The vehicle's time zone |
+| **Object Name** | A name for the vehicle, anything you like |
+| **Object Type** | **Car** (or the right vehicle type) |
+| **Subscription Term** | Choose a plan if you see one. Coins are used to activate the device. **If the list is empty, leave it blank**: see the note below. |
+
+:::warning Remove the leading 0
+If the Device ID starts with **0**, leave out that first 0. Traqcare never uses the leading 0, here or in Camera Settings (Step 6).
+
+| Device ID on the label | Enter in IMEI / Unique ID |
+|------------------------|---------------------------|
+| `012564542389` | `12564542389` |
+:::
+
+<Shots>
+  <Shot src="/img/d22/traqcare-add-device.png" alt="Add Device form, Device Details tab, with protocol JT808 (5101) and model D22" width={620} />
+</Shots>
+
+:::info No plans in "Subscription Term"? You can activate later
+Each plan in the list shows how many coins you have, for example *1 Year (Available Coins: 20)*. **Most new accounts have no coins yet, so the list is empty.** That's fine:
+
+1. Leave **Subscription Term** blank and finish adding the device (Steps 5 and 6). The D22 is saved in your account but **not activated yet**.
+2. **Get coins:** ask your supplier (Skywonder or the reseller you bought the D22 from) to add coins to your account.
+3. **Activate:** go to **Settings → Devices**, find your D22 and click **Activate** in its row. Choose a plan and confirm.
+
+If you don't see an **Activate** link, your supplier can activate the device for you.
+
+The D22 needs to be **activated** before it shows up as online and before you can use it on Traqcare.
+:::
+
+## Step 5 — Turn on the camera sensors
+
+Open the **Device Sensors** tab and switch these **on**:
+
+| Sensor | Parameter | Reading Type |
+|--------|-----------|--------------|
+| **IGNITION** | `acc` | Direct |
+| **POWER** | `power` | Direct |
+| **CAMERA** | — | — |
+| **VIDEO CAMERA** | — | — |
+
+Leave the other sensors off.
+
+<Shots>
+  <Shot src="/img/d22/traqcare-sensors-1.png" alt="Device Sensors tab with IGNITION (acc) and POWER (power) switched on" width={420} />
+  <Shot src="/img/d22/traqcare-sensors-2.png" alt="Device Sensors tab with CAMERA and VIDEO CAMERA switched on" width={420} />
+</Shots>
+
+## Step 6 — Set up the cameras
+
+When **VIDEO CAMERA** is on, a **Camera Settings** tab appears. Open it and fill in:
+
+| Field | What to enter |
+|-------|---------------|
+| **Number of Channels** | **2** for a standard D22 (2 cameras). Choose **4** if your D22 version has 3 or 4 cameras. |
+| **DeviceId** | The **same Device ID you entered in Step 4**, **without the leading 0** |
+| **Video Platform** | **Traqcare** |
+
+Click **Submit**. If you chose a plan in Step 4, the coins are used and the D22 is activated. If you didn't, activate it later (see the note in Step 4).
+
+<Shots>
+  <Shot src="/img/d22/traqcare-camera-settings.png" alt="Camera Settings tab with 2 channels, device ID and video platform Traqcare" width={620} />
+</Shots>
+
+## Step 7 — Check that it's online and watch live video
+
+1. Open the **Map View** in Traqcare.
+2. Find your D22 in the vehicle list. Within a few minutes it turns **online** (coloured instead of grey).
+3. Click the vehicle, then click the **camera icon** to open live video.
+
+If you see live video from the cameras, **your D22 is set up correctly**. 🎉
+
+Not online after 5 minutes? See [Troubleshooting](./troubleshooting#d22-is-not-online-on-traqcare).
+
+**Next:** [Test Your D22](./test-device). It takes about 10 minutes and checks everything works.

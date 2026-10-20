@@ -1,0 +1,82 @@
+---
+id: ai-features
+title: D12 — AI Features (ADAS, DMS & BSD)
+description: Set up which camera does which AI job on the D12, and how each AI alarm (DMS, ADAS, BSD) is triggered.
+sidebar_position: 6
+keywords: [D12, AI, ADAS, DMS, BSD, blind spot, fatigue, phone, smoking, distraction, seat belt, forward collision, lane departure, simulated speed]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D12 — AI Features (ADAS, DMS & BSD)
+
+The D12 runs AI on its cameras and warns the driver with a **voice message** when it sees a risk. Every alarm is also **sent to Traqcare**.
+
+- **DMS (Driver Monitoring):** watches the **driver** for fatigue, phone use, smoking, distraction and seat belt.
+- **BSD (Blind-Spot Detection):** watches the **front, rear, left and right** of the vehicle for people and vehicles in the blind spots.
+- **ADAS (Driver Assistance):** watches the **road ahead** for collision risks and lane departure.
+
+## 1. Choose what each camera does
+
+1. On the D12, tap **Settings → AI**.
+2. For each channel (**CH1–CH5**), choose its job in the **Disposition** column. We recommend:
+
+| Channel | Disposition | Camera |
+|---------|-------------|--------|
+| **CH1** | **Front BSD** | Front blind-spot camera |
+| **CH2** | **Back BSD** | Rear blind-spot camera |
+| **CH3** | **Left BSD** | Left blind-spot camera |
+| **CH4** | **DMS** | Driver camera, facing the driver |
+| **CH5** | **Right BSD** | Right blind-spot camera |
+
+3. Tap **Detail** next to a channel to adjust that function's settings (optional).
+4. Tap **Confirm** to save.
+
+<Shots>
+  <Shot src="/img/d12/d12-ai-channels.jpg" alt="AI page: CH1 Front BSD, CH2 Back BSD, CH3 Left BSD, CH4 DMS, CH5 Right BSD" width={620} caption="Settings → AI: the recommended channel setup" />
+</Shots>
+
+:::tip Each job on one channel only
+If you give a job to a second channel, the D12 moves it to the channel you just set. Make sure every camera has the right job before you tap **Confirm**.
+:::
+
+:::note
+For accurate AI alarms, the cameras must be mounted correctly. The driver camera must see the driver's face clearly, and each blind-spot camera must cover its side of the vehicle.
+:::
+
+## 2. When the alarms trigger
+
+All AI alarms need the vehicle to be moving faster than **30 km/h** (GPS speed). To test while parked, see [Test the AI alarms](./test-device#test-the-ai-alarms).
+
+Most alarms have a **sensitivity** of **High**, **Medium** (default) or **Low**. Higher sensitivity warns sooner.
+
+### DMS — driver alarms
+
+| Alarm | When it triggers (Medium) | Voice warning |
+|-------|---------------------------|---------------|
+| **Fatigue** | Eyes closed or yawning for about 2 seconds | "Please take a break" |
+| **Phone** | Phone held to the ear (above the chin) for about 2 seconds | "Do not use phone" |
+| **Distraction** | Looking away from the road (left, right or down) for about 2 seconds | "Please concentrate on driving" |
+| **Smoking** | Smoking for about 2 seconds | "Please do not smoke" |
+| **Seat belt** | Driver not wearing a seat belt | "Please fasten your seatbelt" |
+
+When several DMS alarms happen at once, the most important one is announced first: fatigue, then phone, distraction, smoking and seat belt.
+
+### ADAS — road alarms
+
+Only works on a channel set to an **ADAS** job, with a camera facing the road ahead.
+
+| Alarm | When it triggers | Voice warning |
+|-------|------------------|---------------|
+| **Forward collision** | Risk of hitting the vehicle ahead (above 30 km/h) | "Watch out for the vehicle in front" |
+| **Pedestrian collision** | A pedestrian, cyclist or motorbike less than 5 m ahead (10–60 km/h) | "Watch out for pedestrians" |
+| **Lane departure** | The vehicle crosses a lane line without signalling (above 30 km/h) | "Lane departure" |
+| **Virtual bumper** | Too close to the vehicle ahead at low speed (1–30 km/h) | "Too close to vehicle" |
+
+### Face recognition
+
+The D12 can check who is driving. Add the driver and their photo in Traqcare and assign them to the vehicle. The D12 then checks the driver's face regularly (every 120 minutes by default) and reports the result to Traqcare.
+
+:::warning
+AI alarms help the driver but **can't replace the driver's attention**. Accuracy depends on light, weather and road conditions, and is not 100 %.
+:::

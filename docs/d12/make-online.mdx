@@ -1,0 +1,156 @@
+---
+id: make-online
+title: D12 — Make It Online on Traqcare
+description: Step-by-step guide to set the Traqcare server on the D12 screen, add the D12 to your account, and watch live video from all cameras.
+sidebar_position: 4
+keywords: [D12, Traqcare, onboarding, activation, JT808, 5101, d4.traqcare.com, Device ID, IMEI, platform settings]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D12 — Make It Online on Traqcare
+
+By the end of this page your D12 is **online on Traqcare** and you can watch live video from its cameras.
+
+**You will need:**
+
+- The D12 installed and switched on, with SIM card, SD card, cameras and antennas connected (see [Installation](./installation)).
+- The **IMEI number** from the label on the back of the D12 (next to **MINI SATA**).
+- A login at [track.traqcare.com](https://track.traqcare.com). **Coins** to activate the device are helpful but not required now: you can activate later (see Step 3).
+
+## The steps at a glance
+
+| Step | What you do | Where |
+|:----:|-------------|-------|
+| 1 | Find your Device ID | D12 label |
+| 2 | Set the Traqcare server | D12 screen |
+| 3 | Add the D12 to your account | Traqcare |
+| 4 | Turn on the camera sensors | Traqcare |
+| 5 | Set up the cameras | Traqcare |
+| 6 | Check that it's online and watch live video | Traqcare |
+
+## Step 1 — Find your Device ID
+
+The D12's Device ID is the **last 12 digits of its IMEI**. The IMEI is printed on the label on the back of the D12.
+
+| IMEI on the label | Device ID (last 12 digits) |
+|-------------------|----------------------------|
+| `862813086562629` | `813086562629` |
+
+:::warning No leading 0
+If the Device ID starts with **0**, leave out that first 0 everywhere in Traqcare. Traqcare never uses the leading 0.
+:::
+
+## Step 2 — Set the Traqcare server on the D12
+
+1. On the D12 screen, tap the **Settings** button (the yellow **gear** icon at the bottom).
+2. If the D12 asks for a password, enter **`00000000`** (eight 0s).
+3. Tap **Platform**, then **Server**.
+4. Set **Center 1**:
+
+| Field | Value |
+|-------|-------|
+| **Server address of Center 1** | `d4.traqcare.com` |
+| **Port number of Center 1** | `5101` |
+| **Center 1 Protocol type** | `2013` |
+
+5. Leave the **Center 2** settings as they are.
+6. Tap **Confirm** to save.
+
+<Shots>
+  <Shot src="/img/d12/d12-home-screen.jpg" alt="D12 home screen with the yellow gear Settings button at the bottom" width={420} caption="1. Tap the yellow gear (Settings)" />
+  <Shot src="/img/d12/d12-settings-menu.jpg" alt="D12 settings menu with Platform at the top left" width={420} caption="2. Tap Platform" />
+</Shots>
+
+<Shots>
+  <Shot src="/img/d12/d12-platform.jpg" alt="Platform, Server page: Center 1 set to d4.traqcare.com, port 5101, protocol 2013" width={640} caption="3. Server: set Center 1, then tap Confirm" />
+</Shots>
+
+## Step 3 — Add the D12 to your Traqcare account
+
+1. Log in at [track.traqcare.com](https://track.traqcare.com).
+2. Go to **Settings** (gear icon) → **Devices** → **Add Device**.
+
+<Shots>
+  <Shot src="/img/d12/traqcare-devices.png" alt="Traqcare Settings, Devices tab with the Add Device button highlighted" width={720} />
+</Shots>
+
+3. Fill in the **Device Details** tab:
+
+| Field | What to enter |
+|-------|---------------|
+| **Client** | The account that will own the D12 |
+| **IMEI / Unique ID** | The **Device ID** from Step 1 (last 12 digits of the IMEI, no leading 0) |
+| **Protocol / Port** | **JT808 (5101)** |
+| **Model Name** | `D12` |
+| **Device Type** | **Wired** |
+| **Device Timezone** | The vehicle's time zone |
+| **Object Name** | A name for the vehicle, anything you like |
+| **Object Type** | **Car** (or the right vehicle type, e.g. truck or bus) |
+| **Subscription Term** | Choose a plan if you see one. Coins are used to activate the device. **If the list is empty, leave it blank**: see the note below. |
+
+<Shots>
+  <Shot src="/img/d12/traqcare-add-device.png" alt="Add Device form, Device Details tab, with protocol JT808 (5101) and model D12" width={620} />
+</Shots>
+
+:::info No plans in "Subscription Term"? You can activate later
+Each plan in the list shows how many coins you have, for example *1 Year (Available Coins: 20)*. **Most new accounts have no coins yet, so the list is empty.** That's fine:
+
+1. Leave **Subscription Term** blank and finish adding the device (Steps 4 and 5). The D12 is saved in your account but **not activated yet**.
+2. **Get coins:** ask your supplier (Skywonder or the reseller you bought the D12 from) to add coins to your account.
+3. **Activate:** go to **Settings → Devices**, find your D12 and click **Activate** in its row. Choose a plan and confirm.
+
+If you don't see an **Activate** link, your supplier can activate the device for you.
+
+The D12 needs to be **activated** before it shows up as online and before you can use it on Traqcare.
+:::
+
+## Step 4 — Turn on the camera sensors
+
+Open the **Device Sensors** tab and switch these **on**:
+
+| Sensor | Parameter | Reading Type |
+|--------|-----------|--------------|
+| **IGNITION** | `acc` | Direct |
+| **POWER** | `power` | Direct |
+| **CAMERA** | — | — |
+| **VIDEO CAMERA** | — | — |
+
+Leave the other sensors off.
+
+<Shots>
+  <Shot src="/img/d12/traqcare-sensors-1.png" alt="Device Sensors tab with IGNITION (acc) and POWER (power) switched on" width={420} />
+  <Shot src="/img/d12/traqcare-sensors-2.png" alt="Device Sensors tab with CAMERA and VIDEO CAMERA switched on" width={420} />
+</Shots>
+
+## Step 5 — Set up the cameras
+
+When **VIDEO CAMERA** is on, a **Camera Settings** tab appears. Open it and fill in:
+
+| Field | What to enter |
+|-------|---------------|
+| **Number of Channels** | Match the number of cameras you connected. If that number isn't in the list, pick the next bigger one: **1** camera → `1` · **2** → `2` · **3–4** → `4` · **5** → `6` |
+| **DeviceId** | The **same Device ID** you entered in Step 3 (no leading 0) |
+| **Video Platform** | **Traqcare** |
+
+Click **Submit**. If you chose a plan in Step 3, the coins are used and the D12 is activated. If you didn't, activate it later (see the note in Step 3).
+
+<Shots>
+  <Shot src="/img/d12/traqcare-camera-settings.png" alt="Camera Settings tab with 6 channels, device ID and video platform Traqcare" width={620} />
+</Shots>
+
+## Step 6 — Check that it's online and watch live video
+
+1. On the D12 screen, the **platform icon** at the top right turns **bright** when it connects to Traqcare (see [status icons](./specifications#screen-status-icons)).
+2. In Traqcare, open the **Map View** and find your D12 in the vehicle list. It shows as **online** (coloured instead of grey).
+3. Click the vehicle, then click the **camera icon** to open live video.
+
+You should see a live picture from **every camera** you connected (CH1 to CH5). If you do, **your D12 is set up correctly**. 🎉
+
+<Shots>
+  <Shot src="/img/d12/traqcare-live-video.png" alt="Traqcare live video with CH1 to CH5 showing pictures" width={560} caption="Live video in Traqcare: CH1 to CH5" />
+</Shots>
+
+Not online after 5 minutes? See [Troubleshooting](./troubleshooting#d12-is-not-online-on-traqcare).
+
+**Next:** [Test Your D12](./test-device). It takes about 10 minutes and checks everything works.

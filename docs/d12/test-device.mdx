@@ -1,0 +1,76 @@
+---
+id: test-device
+title: D12 — Test Your D12
+description: A 10-minute checklist to confirm your D12 works — status icons, online, live video, recordings, playback, ignition, SOS and AI alarms.
+sidebar_position: 5
+keywords: [D12, test, checklist, live video, video playback, SD card, status icons, SOS, AI test, simulated speed]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D12 — Test Your D12
+
+Use this checklist after [Make It Online on Traqcare](./make-online). It takes about **10 minutes**. You can do it on a desk with a 12 V power supply or in the vehicle.
+
+| # | Test | How to do it | ✅ Pass if… |
+|:-:|------|--------------|-------------|
+| 1 | **Cameras** | Look at the D12 screen. | Every connected camera (CH1–CH5) shows a picture. |
+| 2 | **Status icons** | Look at the icons at the top right of the screen. | **4G**, **platform** and **SD card** icons are bright. **GPS** is bright outdoors (it can stay grey indoors). See [status icons](./specifications#screen-status-icons). |
+| 3 | **Online** | Open Traqcare → **Map View** and find the D12. | The vehicle shows as **online** (coloured, not grey). |
+| 4 | **Location** | Put the GPS antenna near a window or outside. | The vehicle shows the right location on the map. |
+| 5 | **Live video** | Click the vehicle in Traqcare, then the **camera icon**. | You see live video from **every camera**. |
+| 6 | **Recording on the D12** | On the D12, tap **Settings → VideoPlay**, choose **SD** (or **MSATA**) and open **Record**. | Recorded videos are listed and play. |
+| 7 | **Video playback in Traqcare** | In Traqcare, open **Video Playback** for the vehicle (see below) and search today's date. | Recordings from the D12 are found and play. |
+| 8 | **Ignition** | In a vehicle, turn the ignition off and on. (On a desk, disconnect and reconnect the **ACC** wire.) | The ignition status in Traqcare changes. With ACC off, the D12 turns off after a delay. |
+| 9 | **SOS button** (if connected) | Press the SOS button. | An **SOS** alarm appears in Traqcare. To get a notification, set up an SOS alert first: see [Creating Alerts](https://docs.traqcare.com/docs/alerts/creating-alerts). |
+| 10 | **AI alarms** | Follow [Test the AI alarms](#test-the-ai-alarms) below. | The D12 speaks a warning and the alarm appears in Traqcare. |
+
+If a test fails, see [Troubleshooting](./troubleshooting).
+
+## Watch recordings
+
+**On the D12 screen:** tap **Settings → VideoPlay**. Choose where the videos are stored, **SD** or **MSATA**, then open **Record** (videos) or **Capture** (photos).
+
+<Shots>
+  <Shot src="/img/d12/d12-videoplay.jpg" alt="VideoPlay page with SD or MSATA selection and Capture / Record options" width={460} caption="VideoPlay: choose SD or MSATA" />
+</Shots>
+
+**In Traqcare:**
+
+1. In **Map View**, open the vehicle's menu in the object list and choose **Video Playback**.
+2. Choose the **date range** and click **Search Videos**.
+3. The **Device** tab lists the recordings on the D12. Click one to play or download it.
+
+<Shots>
+  <Shot src="/img/d12/traqcare-video-playback-menu.png" alt="Vehicle menu in Traqcare with Video Playback highlighted" width={620} caption="Vehicle menu → Video Playback" />
+  <Shot src="/img/d12/traqcare-video-playback.png" alt="Traqcare Video Playback page with device, date range and Search Videos button" width={620} caption="Pick the date range and click Search Videos" />
+</Shots>
+
+## Test the AI alarms
+
+AI alarms only work above **30 km/h**. To test them while parked or on a desk, give the D12 a **simulated speed** of 60 km/h:
+
+1. On the D12, tap **Settings → System**.
+2. Set **Simulated speed** to **`60`** and tap **Confirm**. The screen shows **Simulation 60**.
+
+<Shots>
+  <Shot src="/img/d12/d12-system-simulated-speed.jpg" alt="System page with Simulated speed set to 60" width={460} caption="System → Simulated speed: 60" />
+</Shots>
+
+3. Sit in front of the **driver camera (CH4)** and try:
+
+| Do this | Expected alarm |
+|---------|----------------|
+| Close your eyes for 2–3 seconds | Fatigue: *"Please take a break"* |
+| Yawn (open your mouth wide) | Fatigue |
+| Hold a phone to your ear above your chin and talk | Phone: *"Do not use phone"* |
+| Look to the side or down for 2–3 seconds | Distraction: *"Please concentrate on driving"* |
+| Hold a cigarette (or a pen like one) to your mouth | Smoking: *"Please do not smoke"* |
+| Sit without a seat belt | Seat belt: *"Please fasten your seatbelt"* |
+
+4. To test a **blind-spot camera** (CH1, CH2, CH3 or CH5), walk into its view. The D12 should warn about a person in that blind spot.
+5. Each alarm plays a **voice warning** from the D12 and appears in Traqcare.
+
+:::danger Set the simulated speed back to 0
+When you finish testing, go back to **Settings → System**, set **Simulated speed** to **`0`** and tap **Confirm**. While it's set, the D12 acts as if the vehicle is driving and gives **false alarms**. Restarting the D12 also switches it back to real GPS speed.
+:::

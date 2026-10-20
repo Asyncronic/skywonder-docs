@@ -1,0 +1,45 @@
+---
+id: test-device
+title: D22 — Test Your D22
+description: A 10-minute checklist to confirm your D22 is working — power, online, GPS, live video, ignition, SOS and AI alarms.
+sidebar_position: 5
+keywords: [D22, WD02, test, checklist, live video, SOS, demo mode, AI test, ignition]
+---
+
+# D22 — Test Your D22
+
+Use this checklist after [Make It Online on Traqcare](./make-online). It takes about **10 minutes**. You can do it on a desk with a 12 V power supply or in the vehicle.
+
+| # | Test | How to do it | ✅ Pass if… |
+|:-:|------|--------------|-------------|
+| 1 | **Power** | Switch on the power. | Within about a minute, a Wi-Fi network named after the D22's IMEI appears on your phone. |
+| 2 | **Online** | Open Traqcare → **Map View** and find the D22. | The vehicle shows as **online** (coloured, not grey). |
+| 3 | **Location** | Put the D22 near a window or outside, with a view of the sky. | The vehicle shows the right location on the map. GPS may not work deep indoors. That's normal. |
+| 4 | **Live video** | Click the vehicle, then the **camera icon**. | You see live video from **every camera** (road and driver). |
+| 5 | **Ignition** | In a vehicle, turn the ignition off and back on. (On a desk, disconnect and reconnect the **yellow** wire.) | The ignition status in Traqcare changes from off to on. |
+| 6 | **SOS button** | Press the **SOS button** on the D22. | An **SOS** alarm appears in Traqcare. To get a notification, set up an SOS alert first: see [Creating Alerts](https://docs.traqcare.com/docs/alerts/creating-alerts). |
+| 7 | **AI alarms** (AI versions only) | Follow [Test the AI alarms](#test-the-ai-alarms) below. | The D22 speaks a warning and the alarm appears in Traqcare. |
+
+If a test fails, see [Troubleshooting](./troubleshooting).
+
+## Test the AI alarms
+
+AI alarms normally only work while the vehicle is **driving**. To test them while parked or on a desk, switch the D22 to **Demo mode**. It then behaves as if the vehicle is driving at 60 km/h.
+
+1. Connect your phone to the D22's Wi-Fi and log in with Traqcam Connect (password `111111`).
+2. Go to **AI → Mode Settings**, set **Mode** to **demo mode** and tap **Save**. See [AI Features → Normal and Demo mode](./ai-features#3-mode-settings--normal-and-demo).
+3. Sit in front of the **driver-facing camera** and try:
+
+| Do this | Expected alarm |
+|---------|----------------|
+| Close your eyes for a few seconds | Fatigue driving (eyes closed) |
+| Yawn | Fatigue driving (yawn) |
+| Hold a phone to your ear | Phone |
+| Look away to the side for a few seconds | Distracted driving |
+| Cover the driver camera with your hand | Equipment occlusion (camera blocked) |
+
+4. Each alarm should play a **voice warning** from the D22 and appear in Traqcare.
+
+:::danger Switch back to Normal mode
+When you finish testing, go back to **Mode Settings**, set **normal mode** and tap **Save**. If you leave Demo mode on, the D22 gives **false alarms** even when the vehicle is parked.
+:::

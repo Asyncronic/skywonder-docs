@@ -1,0 +1,120 @@
+---
+id: ai-features
+title: D22 — AI Features (ADAS & DMS)
+description: Turn on and adjust the D22's AI alarms — driver monitoring (DMS), road warnings (ADAS), and Normal / Demo mode — in the Traqcam Connect app.
+sidebar_position: 6
+keywords: [D22, WD02, AI, ADAS, DMS, fatigue, phone, smoking, lane departure, forward collision, demo mode, Traqcam Connect]
+---
+
+import {Shots, Shot} from '@site/src/components/Shots';
+
+# D22 — AI Features (ADAS & DMS)
+
+:::info AI versions only
+AI alarms are available only on a D22 ordered **with DMS + ADAS**.
+:::
+
+The D22 has two kinds of AI:
+
+- **DMS (Driver Monitoring):** watches the **driver** for fatigue, phone use, smoking, distraction and more.
+- **ADAS (Driver Assistance):** watches the **road** for lane departure, collision risks and pedestrians.
+
+When an AI alarm happens, the D22 **warns the driver with a voice message** and **sends the alarm to Traqcare**.
+
+## Open the AI settings
+
+1. Connect your phone to the D22's Wi-Fi (name = IMEI, password `88888888`).
+2. Open **Traqcam Connect**, tap **Settings** and log in with `111111`.
+3. Under **Alarm Settings**, tap **AI**.
+
+The AI menu has: **Channel Settings**, **Alarm Settings**, **Mode Settings**, Driver Infor, AI customID and File Upload. You only need the first three.
+
+<Shots>
+  <Shot src="/img/d22/app-home-ai.png" alt="Settings page with AI highlighted under Alarm Settings" width={220} caption="Alarm Settings → AI" />
+  <Shot src="/img/d22/app-ai-menu.jpg" alt="AI Settings menu: Channel Settings, Alarm Settings, Mode Settings, Driver Infor, AI customID, File Upload" width={220} caption="The AI menu" />
+</Shots>
+
+## 1. Channel Settings
+
+This page (titled **AI built in software**) links each AI function to a camera. The **Algorithm Version** is detected automatically and can't be changed.
+
+:::tip Usually already set
+Channel settings are normally set at the factory. Only change them if a camera isn't giving any AI alarms or our support team asks you to.
+:::
+
+For each channel you can choose:
+
+- **CH (channel):** which camera the AI uses. **Close** means AI is off for that channel.
+- **Resolution:** the picture quality the AI uses (default **1080P**).
+- **Direction:** which way that camera faces, **FRONT** or **BEHIND**.
+- Other options, such as camera type and the left/right blind-spot (BSD) settings, can stay at their defaults.
+
+Tap **Save**. The app shows **Save OK**.
+
+<Shots>
+  <Shot src="/img/d22/app-ai-channels.jpg" alt="AI built in software page with CH1 to CH4 and resolutions" width={200} caption="Channels" />
+  <Shot src="/img/d22/app-ai-channel-picker.jpg" alt="Channel picker: Close, 1,2chn, 3,4chn, 5,6chn, 7,8chn" width={200} caption="Choose the channel" />
+  <Shot src="/img/d22/app-ai-direction.jpg" alt="Direction picker: BEHIND or FRONT" width={200} caption="Choose the direction" />
+  <Shot src="/img/d22/app-ai-saved.jpg" alt="Save OK message" width={200} caption="Save" />
+</Shots>
+
+## 2. Alarm Settings
+
+This page lists every AI alarm. Tap an alarm to open its settings and turn it on or off.
+
+<Shots>
+  <Shot src="/img/d22/app-ai-alarms-dms.jpg" alt="AI alarm list: DMS alarms followed by ADAS alarms" width={220} caption="DMS alarms" />
+  <Shot src="/img/d22/app-ai-alarms-adas.jpg" alt="AI alarm list: end of the DMS alarms and the ADAS alarms" width={220} caption="ADAS alarms" />
+</Shots>
+
+**DMS: driver alarms**
+
+| Alarm | When it triggers |
+|-------|------------------|
+| Close the eyes (fatigue driving) | The driver's eyes stay closed |
+| Yawn (fatigue driving) | The driver yawns |
+| Phone | The driver holds a phone to their ear |
+| Smoke | The driver is smoking |
+| Cast about (distracted driving) | The driver looks away from the road for too long |
+| Driver abnormal | No driver is detected in the seat |
+| Safety belt | The driver isn't wearing a seat belt |
+| Equipment occlusion | The driver camera is covered or blocked |
+| Infrared blocking | The driver wears glasses that block the camera's infrared light |
+| Identification | Driver identification |
+| Drink water | The driver is drinking while driving |
+
+**ADAS: road alarms**
+
+| Alarm | When it triggers |
+|-------|------------------|
+| Lane departure warning | The vehicle drifts out of its lane without signalling |
+| Forward collision | Risk of hitting the vehicle ahead |
+| Pedestrian collision | Risk of hitting a pedestrian or cyclist ahead |
+| Headway monitoring warning | Following the vehicle ahead too closely |
+| Ahead car is starting | The vehicle ahead has moved off while you are still stopped |
+
+Tap **Save** after making changes.
+
+## 3. Mode Settings — Normal and Demo
+
+| Mode | Use it for |
+|------|-----------|
+| **normal mode** | Real driving. AI alarms only trigger while the vehicle is moving. **Use this in vehicles.** |
+| **demo mode** | Testing in an office or a parked vehicle. The D22 acts as if the vehicle is driving at 60 km/h, so the alarms can trigger. |
+
+To change mode: **Mode Settings → Mode** → choose **normal mode** or **demo mode** → **Save**.
+
+<Shots>
+  <Shot src="/img/d22/app-mode-settings.jpg" alt="Mode Settings page showing current mode normal mode" width={220} />
+  <Shot src="/img/d22/app-mode-demo.jpg" alt="Mode picker with normal mode and demo mode" width={220} />
+</Shots>
+
+:::danger Don't leave Demo mode on
+Demo mode is only for testing. Switch back to **normal mode** before the vehicle goes into service, or the D22 gives false alarms while parked.
+:::
+
+:::warning
+AI alarms help the driver but **can't replace the driver's attention**. Accuracy depends on light, weather and road conditions, and is not 100 %.
+:::
+
+To try the alarms step by step, see [Test Your D22 → Test the AI alarms](./test-device#test-the-ai-alarms).
