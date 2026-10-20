@@ -55,7 +55,8 @@ module.exports = function seoPostBuild(context, options) {
               const parts = [];
               let n = $(h).next();
               while (n.length && !n.is('h2, h3')) {
-                parts.push(clean(n.text()));
+                // Lists read as one sentence: "a; b; c."
+                parts.push(n.is('ul, ol') ? `${n.find('li').map((_, li) => clean($(li).text())).get().join('; ')}.` : clean(n.text()));
                 n = n.next();
               }
               const answer = parts.filter(Boolean).join(' ').slice(0, 1200);
