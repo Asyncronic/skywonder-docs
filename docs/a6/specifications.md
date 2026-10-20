@@ -14,7 +14,7 @@ keywords: [A6, specifications, hardware, 2K, 720P, 4G CAT1, GPS, BeiDou, TF card
 | Memory | DDR3 256 MB |
 | Storage (ROM) | NOR 256 Mb |
 | Operating system | Linux |
-| Cameras | Front MIPI 2K, rear AHD 720P |
+| Cameras | Front MIPI 2K, rear AHD (720P by default, supports 1080P) |
 | Frame rate | Front 2K @ 25 fps |
 | Video compression | H.264 |
 | Video file format | TS |

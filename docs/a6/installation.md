@@ -8,7 +8,7 @@ keywords: [A6, dashcam, installation, SIM card, TF card, power, cigarette lighte
 
 # A6 — Installation
 
-The **A6** is a 4G dashcam with **2 cameras**: a built-in front 2K camera and a 720P rear camera on a cable. You set it up with the free **Cloud Spirit** app on your phone, then add it to Traqcare.
+The **A6** is a 4G dashcam with **2 cameras**: a built-in front 2K camera and a rear camera on a cable (720P by default, supports 1080P). You set it up with the free **Cloud Spirit** app on your phone, then add it to Traqcare.
 
 :::tip Testing before installing?
 You can set up and test the A6 on a desk first. Do steps 1 to 3 below, then go to [Make It Online on Traqcare](./make-online.mdx). Install it in the vehicle once everything works.
