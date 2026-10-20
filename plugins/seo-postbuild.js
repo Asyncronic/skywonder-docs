@@ -3,8 +3,9 @@
  *
  *  - TechArticle JSON-LD on every /docs/ page (headline, description, URL, publisher), so search engines and AI
  *    assistants know each guide is a technical article by the manufacturer.
- *  - FAQPage JSON-LD on the routes in `faqRoutes`, built from the questions that are visible on the page
- *    (h2/h3 headings ending in "?" and the text under them). Nothing is listed that a reader cannot see.
+ *  - FAQPage JSON-LD built from the questions that are visible on the page (h2/h3 headings ending in "?" and the
+ *    text under them): on the routes in `faqRoutes`, and on any docs page with at least two such questions (a
+ *    "Common questions" section). Nothing is listed that a reader cannot see.
  *  - llms.txt: the hand-written header in static/llms.txt, followed by every docs page with its one-line description.
  *
  * It reads the built HTML (so it always matches the content) and only inserts a <script> before </head>; the page
@@ -24,6 +25,7 @@ module.exports = function seoPostBuild(context, options) {
     async postBuild({ outDir, routesPaths, siteConfig }) {
       const site = siteConfig.url.replace(/\/$/, '');
       const pages = [];
+      let faqPages = 0;
       for (const route of [...new Set(routesPaths)].sort()) {
         if (!route.startsWith('/docs/') || route.includes('/tags')) continue;
         const file = [path.join(outDir, route, 'index.html'), path.join(outDir, `${route.replace(/\/$/, '')}.html`)].find((f) => fs.existsSync(f));
@@ -45,7 +47,7 @@ module.exports = function seoPostBuild(context, options) {
             author: publisher,
           },
         ];
-        if (faqRoutes.includes(route)) {
+        {
           const questions = [];
           $('.theme-doc-markdown')
             .find('h2, h3')
@@ -62,7 +64,10 @@ module.exports = function seoPostBuild(context, options) {
               const answer = parts.filter(Boolean).join(' ').slice(0, 1200);
               if (answer) questions.push({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: answer } });
             });
-          if (questions.length) graph.push({ '@type': 'FAQPage', url, mainEntity: questions });
+          if (questions.length && (faqRoutes.includes(route) || questions.length >= 2)) {
+            graph.push({ '@type': 'FAQPage', url, mainEntity: questions });
+            faqPages++;
+          }
         }
         fs.writeFileSync(file, html.replace('</head>', `${ldScript({ '@context': 'https://schema.org', '@graph': graph })}</head>`));
         pages.push({ route, title: headline || clean($('title').text()), description, url });
@@ -85,7 +90,7 @@ module.exports = function seoPostBuild(context, options) {
         .map(([key, list]) => `### ${sectionLabels[key] ?? key}\n\n${list.map((p) => `- [${p.title}](${p.url})${p.description ? `: ${p.description}` : ''}`).join('\n')}`)
         .join('\n\n');
       fs.writeFileSync(llmsPath, `${header}\n\n## All pages\n\n${body}\n`);
-      console.log(`[seo-postbuild] ${pages.length} docs pages: TechArticle JSON-LD, ${faqRoutes.length} FAQ route(s), llms.txt`);
+      console.log(`[seo-postbuild] ${pages.length} docs pages: TechArticle JSON-LD, FAQPage on ${faqPages} page(s), llms.txt`);
     },
   };
 };
